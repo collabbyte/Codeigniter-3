@@ -6,24 +6,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:site_name" content="" />
+  <meta name="author" content="collabbyte@gmail.com">
+  
+  <!-- Facebook Meta Tags -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Title Web" />
-  <meta property="og:url" content="<?php echo FullURL();?>" />
-  <meta property="og:image" content="<?php echo AssetsURL() ?>images/default/favicon-32x32.png" />
-  <meta property="og:image:width" content="200px" />
-  <meta property="og:image:height" content="200px" />
-  <meta property="og:description" content="Site Desc" />
+  <meta property="og:title" content="<?php echo $title_og ?>" />
+  <meta property="og:url" content="<?php echo FullURL() ?>" />
+  <meta property="og:image" content="<?php echo $image_link ?>" />
+  <meta property="og:description" content="<?php echo $description_og ?>" />
+
+  <!-- Twitter Meta Tags -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="<?php echo $title_og ?>">
+  <meta property="twitter:url" content="<?php echo FullURL() ?>">
+  <meta property="twitter:image" content="<?php echo $image_link ?>">
+  <meta property="twitter:description" content="<?php echo $description_og ?>">
 
   <meta name="description" content="Site Desc">
   <meta name="keywords" content="Site Keyword">
-  <meta name="google-site-verification" content="" />
-  <meta name="yandex-verification" content="" />
+
+  <!-- Verification Here -->
+  <!-- <meta name="google-site-verification" content="" />
+  <meta name="yandex-verification" content="" /> -->
   
   <title>Title</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo AssetsURL() ?>images/default/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo AssetsURL() ?>images/default/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo AssetsURL() ?>images/default/favicon-16x16.png">
-  <link rel="manifest" href="<?php echo AssetsURL() ?>images/default/site.webmanifest">
+  <link rel="shortcut icon" href="<?php echo AssetsURL() ?>images/default/favicon.ico">
+  
 
   <link rel="stylesheet" type="text/css" href="<?php echo AssetsURL() ?>plugins/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="<?php echo AssetsURL() ?>plugins/fontawesome/css/all.css">

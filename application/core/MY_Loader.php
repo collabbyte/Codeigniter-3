@@ -12,7 +12,8 @@ class MY_Loader extends CI_Loader {
         // 
         // $CI =& get_instance();
         // $var_1 = array(
-        //     'site_configs' => $CI->site_model->site_configs()
+        //     'example_var' => 'example',
+        //     'example_query' => $CI->example_model->example()
         // );
         
         // $vars = array_merge($vars, $var_1);

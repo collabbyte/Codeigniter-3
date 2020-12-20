@@ -8,6 +8,7 @@ class MY_Controller extends CI_Controller
         parent::__construct();
         // Show All Sessions Saved
         // echo '<pre>',print_r($this->session->all_userdata(), 1),'</pre>';
+        
         // Show All Cookies Saved
         // echo '<pre>',print_r($this->input->cookie(), 1),'</pre>';
     }
