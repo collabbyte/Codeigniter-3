@@ -13,10 +13,10 @@ class Site extends CI_Controller
 		$this->load->view('index');
 	}
     
-	public function template()
-	{
-		$this->load->MY_View('template');
-	}
+	// public function template()
+	// {
+	// 	$this->load->MY_View('template');
+	// }
     
 	public function images($FileDir, $width, $filename)
 	{
