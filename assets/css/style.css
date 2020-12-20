@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    color: #59595f;
+    background-color: #fafafa;
+}
+a {
+    color:inherit;
+}
+a:hover {
+    text-decoration:none;
+}
+/* Mods */
+.card,
+.btn,
+.form-control,
+.breadcrumb,
+.alert,
+.pagination,
+.navbar-toggler,
+.page-item:first-child .page-link,
+.page-item:last-child .page-link,
+.input-group-text,
+.dropdown-menu,
+.nav-tabs .nav-link,
+.list-group-item,
+.list-group-item:first-child,
+.list-group-item:last-child,
+.card-img-top,
+.modal-content{
+    border-radius: 0px;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+.navbar-toggler:focus{
+    outline: 1px none;
+}
+.modal-dialog{
+    max-width: 900px;
+}
+input[type="file"]::-webkit-file-upload-button {
+    display: block;
+}
+.d-contents{
+    display: contents;
+}
+.img_cover{
+    object-fit: cover;
+    object-position: 20% 20%;
+    top: 0;
+    left: 0;
+}
+/* Google Ads */
+.ads_block{
+    display:inline-block;
+    margin-bottom:1.5rem;
+    width:100%;
+}
+
+/* Style Responsive PC */
+/* #wrapper{
+    min-height: 100vh;
+    margin: 15px 0;
+} */
+
+/* Style Responsive Mobile */
+@media (max-width: 767px){
+
+}
