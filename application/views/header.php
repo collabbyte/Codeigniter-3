@@ -10,17 +10,17 @@
   
   <!-- Facebook Meta Tags -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="<?php echo $title_og ?>" />
+  <meta property="og:title" content="title" />
   <meta property="og:url" content="<?php echo FullURL() ?>" />
-  <meta property="og:image" content="<?php echo $image_link ?>" />
-  <meta property="og:description" content="<?php echo $description_og ?>" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="" />
 
   <!-- Twitter Meta Tags -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="<?php echo $title_og ?>">
+  <meta property="twitter:title" content="title">
   <meta property="twitter:url" content="<?php echo FullURL() ?>">
-  <meta property="twitter:image" content="<?php echo $image_link ?>">
-  <meta property="twitter:description" content="<?php echo $description_og ?>">
+  <meta property="twitter:image" content="">
+  <meta property="twitter:description" content="">
 
   <meta name="description" content="Site Desc">
   <meta name="keywords" content="Site Keyword">
