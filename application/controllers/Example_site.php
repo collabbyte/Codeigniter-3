@@ -7,6 +7,8 @@ class Site extends CI_Controller
     function __construct()
     {
         parent::__construct();
+        $this->load->model('example_model');
+        
         // // Show All Sessions Saved
         // echo '<pre>',print_r($this->session->all_userdata(), 1),'</pre>';
         // // Show All Cookies Saved
