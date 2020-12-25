@@ -1,22 +1,22 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Site extends CI_Controller
+class Site extends MY_Controller
 {
+    // Example Call Dynamic Model
+    // $this->model = new Dynamic_model('table');
+    // $this->model->parameter
+
     function __construct()
     {
         parent::__construct();
+        $this->model = new Dynamic_model('data');
     }
     
 	public function index()
 	{
 		$this->load->view('index');
 	}
-    
-	// public function template()
-	// {
-	// 	$this->load->MY_View('template');
-	// }
     
 	public function images($FileDir, $width, $filename)
 	{

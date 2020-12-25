@@ -1,13 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Site extends CI_Controller
+class Site extends MY_Controller
 {
+    // Example Call Dynamic Model
+    // $this->model = new Dynamic_model('table');
+    // $this->model->parameter
+
     // Global Function
     function __construct()
     {
         parent::__construct();
-        $this->load->model('example_model');
         
         // // Show All Sessions Saved
         // echo '<pre>',print_r($this->session->all_userdata(), 1),'</pre>';

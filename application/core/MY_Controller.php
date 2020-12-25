@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+include APPPATH . 'models/Dynamic_model.php';
 
 class MY_Controller extends CI_Controller
 {

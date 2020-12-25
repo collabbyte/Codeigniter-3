@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Action extends MY_Controller
 {
+
     // Global Function
     function __construct()
     {
