@@ -11,38 +11,16 @@ class Site extends MY_Controller
     function __construct()
     {
         parent::__construct();
+        $this->table = new Dynamic_model('table');
         
         // // Show All Sessions Saved
-        // echo '<pre>',print_r($this->session->all_userdata(), 1),'</pre>';
+        // echo PrintArray($this->session->all_userdata());
         // // Show All Cookies Saved
-        // echo '<pre>',print_r($this->input->cookie(), 1),'</pre>';
+        // echo PrintArray($this->input->cookie());
     }
     
-	public function index()
-	{
-		$this->load->view('index');
-	}
-    
-    // Function Load View Without Array Variables Sended
-	public function view_without_variables()
-	{
-		$this->load->view('example');
-	}
-    
-    // Function Load View With Array Variables Sended
-	public function view_with_variables()
-	{
-		// Load Related Models.
-		$this->load->model('example_model');
-
-        $data = array(
-            'object_variable' => $value
-        );
-		$this->load->view('example', $data);
-	}
-    
     // Function Load MY_View Without Array Variables Sended
-	public function myview_without_variables()
+	public function myview_default()
 	{
 		$this->load->MY_View('example');
 	}
@@ -50,9 +28,6 @@ class Site extends MY_Controller
     // Function Load View With Array Variables Sended
 	public function myview_with_variables()
 	{
-		// Load Related Models.
-		$this->load->model('example_model');
-
         $data = array(
             'object_variable' => $value
         );
@@ -60,10 +35,7 @@ class Site extends MY_Controller
 	}
     
     public function sitemap()
-	{
-		// Load Related Models.
-		$this->load->model('example_model');
-        
+	{        
         $data = array(
             'object_variables' => $value
         );

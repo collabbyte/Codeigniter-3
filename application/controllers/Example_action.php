@@ -7,6 +7,7 @@ class Action extends MY_Controller
     function __construct()
     {
         parent::__construct();
+        $this->table = new Dynamic_model('table');
     }
     
     // Kill Index
@@ -24,9 +25,6 @@ class Action extends MY_Controller
             
         } else {
 
-            // Load Related Models.
-            $this->load->model('example_model');
-
             // POST to Variables
             $account = $this->input->post('post_account_variable');
             $password = $this->input->post('post_password_variable');
@@ -35,7 +33,7 @@ class Action extends MY_Controller
             $sha_password = sha_data($account, $password);
 
             // Checking Data from Table
-            $data = $this->example_model->where_row('colomn_account', $account);
+            $data = $this->table->where_row('colomn_account', $account);
             
             // Checking Query work or not
             if ($data){
@@ -93,7 +91,7 @@ class Action extends MY_Controller
         } else {
 
             // Load Related Models.
-            $this->load->model('example_model');
+            $this->load->model('table');
 
             // List Data want to insert, format array
             $data = array(
@@ -101,7 +99,7 @@ class Action extends MY_Controller
             );
 
             // Inserting $data array to tables
-            $Query = $this->example_model->insert_data($data);
+            $Query = $this->table->insert_data($data);
 
             // Checking Query work or not
             if ($Query){
@@ -133,7 +131,7 @@ class Action extends MY_Controller
         } else {
             
             // Load Related Models.
-            $this->load->model('example_model');
+            $this->load->model('table');
 
             // Update row from where Array Data
             $where = array(
@@ -146,7 +144,7 @@ class Action extends MY_Controller
             );
 
             // Update Tables fix $where and update list from $data 
-            $Query = $this->example_model->update_data($where, $data);
+            $Query = $this->table->update_data($where, $data);
 
             // Checking Query work or not
             if ($Query){
@@ -177,7 +175,7 @@ class Action extends MY_Controller
         } else {
             
             // Load Related Models.
-            $this->load->model('example_model');
+            $this->load->model('table');
 
             // delete row from where Array Data
             $where = array(
@@ -185,7 +183,7 @@ class Action extends MY_Controller
             );
 
             // Update Tables fix $where and update list from $data 
-            $Query = $this->example_model->delete_data($where);
+            $Query = $this->table->delete_data($where);
 
             // Checking Query work or not
             if ($Query){

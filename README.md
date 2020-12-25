@@ -2,16 +2,15 @@
 CodeIgniter is a powerful PHP framework with a very small footprint, built for developers who need a simple and elegant toolkit to create full-featured web applications.
 
 # Module
-- Example Model
 - Example Controller Site
 - Example Controller Action
 - Resize Images
 - Function Helper
 - MY_Controller
-- MY_Lang
 - MY_Loader
 - Dynamics Robots.txt
 - Dynamics sitemap.xml
+- Dynamics Model
 - Favicon
 
 # Included Framework
