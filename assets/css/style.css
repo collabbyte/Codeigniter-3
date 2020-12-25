@@ -15,6 +15,7 @@ a:hover {
     text-decoration:none;
 }
 /* Mods */
+/* for flat design
 .card,
 .btn,
 .form-control,
@@ -34,6 +35,8 @@ a:hover {
 .modal-content{
     border-radius: 0px;
 }
+*/
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
@@ -49,6 +52,7 @@ input[type="file"]::-webkit-file-upload-button {
 .d-contents{
     display: contents;
 }
+/* Make Image Mode Cover */
 .img_cover{
     object-fit: cover;
     object-position: 20% 20%;
@@ -63,10 +67,10 @@ input[type="file"]::-webkit-file-upload-button {
 }
 
 /* Style Responsive PC */
-/* #wrapper{
+#wrapper{
     min-height: 100vh;
     margin: 15px 0;
-} */
+}
 
 /* Style Responsive Mobile */
 @media (max-width: 767px){

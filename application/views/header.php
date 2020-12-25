@@ -47,3 +47,9 @@
 </head>
 <body>
 <!-- Global Navbar Here -->
+
+<!-- Global Notification -->
+<!-- Example Notification sync with Ajax on custom.js -->
+<!-- <div id="notice" class="alert alert-success">
+  <div id="notice-text"></div>
+</div> -->
