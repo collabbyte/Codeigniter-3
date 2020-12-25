@@ -17,13 +17,13 @@ CodeIgniter is a powerful PHP framework with a very small footprint, built for d
 # Included Framework
 - Bootstrap v4.5.3
 - jQuery v3.5.1
-- popper.js v2.4.4
+- popper.js v2.6.0
 - Font Awesome Free 5.15.1
 - Summernote 0.8.18
-- DataTables 1.10.22
+- DataTables 1.10.23
   - Buttons 1.6.3
   - Print view 1.6.3
-  - FixedColumns 3.3.1
+  - FixedColumns 3.3.2
   - Responsive 2.2.6
-  - SearchPanes 1.2.1
+  - SearchPanes 1.2.2
 - OwlCarousel v2.3.4
