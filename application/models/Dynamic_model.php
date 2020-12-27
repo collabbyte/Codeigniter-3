@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-include BASEPATH . 'core\\Model.php';
+include BASEPATH . 'core/Model.php';
 
 class Dynamic_model extends CI_Model
 {    
